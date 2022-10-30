@@ -1,0 +1,11 @@
+import java.util.Arrays;
+
+public class LessonJ2 {
+
+	public static void main(String[] args) {
+		System.out.println(sumSquares(10));
+	}
+	public static int sumSquares(int val){
+	      return (val * (val + 1) / 2) * (2 * val + 1) / 3;
+	   }
+}

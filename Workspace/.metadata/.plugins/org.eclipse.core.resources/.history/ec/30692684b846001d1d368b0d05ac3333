@@ -1,0 +1,40 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class LessonA {
+
+	public static void main(String[] args) {
+		String[] itemsLetter = {"fuck","shit","hell","bitch"};
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập vào một chuỗi: ");
+		String input = scanner.nextLine();
+		
+		for(int i = 0; i < itemsLetter.length; i++) {
+			if(input.replaceAll(" ","").toLowerCase().contains(itemsLetter[i].toLowerCase())) {
+				String temp = convertString(itemsLetter[i]);
+			
+				
+				System.out.println(temp);
+				break;
+			}
+		}
+		
+		
+		
+	}
+	public static String convertString(String str) {
+		char[] chItem = str.toCharArray();
+
+		for(int i = 0; i < chItem.length; i++) {
+			if(i > 0 && i < (chItem.length - 1)) {
+				chItem[i] = '*';
+			}
+		}
+		str = String.valueOf(chItem);
+		
+		
+
+		return str;
+	}
+}
+

@@ -1,0 +1,66 @@
+package tailaph26495.bai3;
+
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		menu();
+	}
+		public static void menu() {
+			try {
+				
+				DanhSachSanPham ds = new DanhSachSanPham();
+				Scanner scanner = new Scanner(System.in);
+				
+				System.out.println("\t*------------------ Quản lí sản phẩm -------------------*");
+				System.out.println("\t-   1. Nhập danh sách sản phẩm từ bàn phím.");
+				System.out.println("\t-   2. Xuất danh sách sản phẩm từ bàn phím.");
+				System.out.println("\t-   3. Sắp xếp giảm dần theo giá và xuất ra màn hình.");
+				System.out.println("\t-   4. Tìm và xóa sản phẩm theo tên nhập từ bàn phím.");
+				System.out.println("\t-   5. Xuất giá trung bình của các sản phẩm");
+				System.out.println("\t-   0. Thoát");
+				System.out.println("\t*--------------------------------------------------------*");
+				do {
+					System.out.print("  --> Chọn chức năng: ");
+					int option = scanner.nextInt();
+					switch (option) {
+						case 1: 
+							ds.input();
+							System.out.println("\n - Hoàn thành chức năng 1.");
+							break;
+						case 2:
+							System.out.println("\t  +-- Danh sách sản phẩm --+");
+							ds.output();
+							System.out.println("\n - Hoàn thành chức năng 2.");
+							break;
+						case 3:
+							ds.sortDecreaseToPrice();
+							System.out.println("\n - Hoàn thành chức năng 3.");
+							break;
+						case 4:
+							ds.findAndRemove();
+							System.out.println("\n - Hoàn thành chức năng 4.");
+							break;
+						case 5:
+							ds.averagePrice();
+							System.out.println("\n - Hoàn thành chức năng 4.");
+							break;
+						case 0:
+							System.exit(0);
+						default:
+							System.out.println(" --> Hãy chọn đúng chức năng!");
+						}
+					
+				}while(true);
+			
+			
+			} catch (Exception e) {
+				System.out.println("  --> Sai dữ liệu");
+			}
+		}	
+
+	}	
+

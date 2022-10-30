@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;tailaph26485_lab4.java.SanPham&apos; to &apos;SanPham_1&apos;&#x0D;&#x0A;- Original project: &apos;Lab_4&apos;&#x0D;&#x0A;- Original element: &apos;tailaph26485_lab4.java.SanPham&apos;&#x0D;&#x0A;- Renamed element: &apos;tailaph26485_lab4.java.SanPham_1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SanPham&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;tailaph26485_lab4.java{SanPham.java[SanPham" matchStrategy="1" name="SanPham_1" qualified="false" references="true" similarDeclarations="false" stamp="1644309061920" textual="false" version="1.0"/>
+</session>
